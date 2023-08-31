@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family:'Fjalla One', sans-serif;;
+  background-image: url(pexels-content-pixie-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  box-sizing: border-box;
+  backdrop-filter: blur(0.5px);
+
+}
+
+
+
+
+.wrap, .display {
+  display: grid;
+  grid-template-columns: 160px 120px 50px;
+  grid-gap: 7px;
+/*align-items: center; */
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.308);
+  backdrop-filter: blur(14px);
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 400px;
+}
+
+.wrap {
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+/* .grid {
+  display: grid;
+  grid-template-columns: 40px 20px 10px;
+} */
+
+.inputTx, .inputDt{
+  font-size: 1rem;
+  padding: 12px;
+}
+
+.added {
+  background-color: green;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.displayEl {
+  align-items: center;
+  /* border: 2px solid black; */
+  max-height: 300px;
+  overflow: scroll;
+  margin: 5px;
+}
+
+.column {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px;
+  background-color: rgb(1, 72, 165);
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+  border: 2px solid rgb(1, 72, 165);
+}
+
+.column:is(:hover, :focus) {
+  border: 2px solid black;
+}
+
+button, input {
+  border-radius: 5px;
+  outline: none;
+}
+
+
+
+input {
+  border: 2px solid #858484;
+  background-color: rgba(104, 103, 103, 0);
+}
+
+input:focus {
+  border-color: #0d75ec;
+}
+
+.border-right {
+  border-right: 2px solid  #858484;
+}
+
+footer {
+  background-color: rgba(58, 71, 131, 0.185);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  font-size: 1rem;
+  /* gap: 20px; */
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  }
+footer .wrap {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+  footer a img{
+    width: 25px;
+    height: 25px;
+    filter:contrast(100%);
+}
+
+.erromassage {
+  font-size: 0.9rem;
+  color: red;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 550px) {
+  .wrap, .display {
+    grid-template-columns: 280px 160px 85px;
+  }
+}
+
+
+@media screen and (min-width: 690px) {
+  .wrap, .display {
+    grid-template-columns: 300px 180px 85px;
+  }
+}
+
+@media screen and (min-width: 890px) {
+  body {
+    background-image: url(pexels-content-pixie-2.jpg);
+  }
+  .wrap, .display {
+    display: grid;
+    grid-template-columns: 400px 200px 85px;
+    grid-gap: 7px;
+  /*   align-items: center; */
+  }
+}
