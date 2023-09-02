@@ -41,8 +41,7 @@ main {
   min-height: 400px;
   align-items: center;
   justify-content: center;
-  appearance: none;
-  box-shadow: -1px -1px 18px 5px rgba(0,0,0,0.14);
+  
 }
 
 .wrap {
@@ -146,16 +145,14 @@ footer .wrap {
 
 @media screen and (min-width: 550px) {
   .wrap, .display {
-    grid-template-columns: 280px 160px 85px !important;
-    appearance: none;
+    grid-template-columns: 280px 160px 85px;
   }
 }
 
 
 @media screen and (min-width: 690px) {
   .wrap, .display {
-    grid-template-columns: 300px 180px 85px !important;
-    appearance: none;
+    grid-template-columns: 300px 180px 85px;
   }
 }
 
@@ -165,9 +162,8 @@ footer .wrap {
   }
   .wrap, .display {
     display: grid;
-    grid-template-columns: 400px 200px 85px !important;
+    grid-template-columns: 400px 200px 85px;
     grid-gap: 7px;
   /*   align-items: center; */
-  appearance: none;
   }
 }
