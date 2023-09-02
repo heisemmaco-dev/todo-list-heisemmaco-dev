@@ -36,11 +36,11 @@ added = () => {
   let erromassage = document.querySelector('.erromassage')
 
 if (inputText.value.length === 0 && inputDate.value.length === 0) {
-  erromassage.innerHTML = 'NO INPUT'
+  erromassage.innerHTML = 'No input'
 } else if (inputText.value.length >= 1 && inputDate.value.length === 0){
-  erromassage.innerHTML = 'NO DATE INPUT'
+  erromassage.innerHTML = 'No Date Input'
 } else if (inputText.value.length === 0 && inputDate.value.length >= 1){
-  erromassage.innerHTML = 'NO TEXT INPUT'
+  erromassage.innerHTML = 'No Text Input'
 } else if (inputText.value.length >= 1 && inputDate.value.length >= 1) {
   arr1.push({name, dueDate})
   render()
