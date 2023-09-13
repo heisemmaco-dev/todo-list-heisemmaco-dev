@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live]  (https://heisemmaco-dev.github.io/todo-list-heisemmaco-dev/)
+- <a href="https://heisemmaco-dev.github.io/todo-list-heisemmaco-dev/">Live Site</a>
 
 ### Built with
 
